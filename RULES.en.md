@@ -42,7 +42,7 @@ Choose the **minimum necessary structure** to achieve your goal. Adding decorati
 
 ## 3. Emphasis
 
-- **Bold**: at most 3 instances per message
+- **Bold**: **up to 3 instances per message** (a ceiling, not a target). Use bold when emphasis matters. Zero use makes it harder for the reader to locate the core point. Rule of thumb: bold a word if the reader will likely scan back to find it
 - **Emoji**: do not over-use. What feels like visual cueing becomes color overload. Anthropic explicitly documents "fewer emoji" for Claude Opus 4.7
 - **Leading priority markers (🔴🟡✅)**: avoid them when there are only 2–3 items — prose can convey priority just as well
 
