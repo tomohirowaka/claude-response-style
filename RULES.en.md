@@ -38,7 +38,13 @@ Choose the **minimum necessary structure** to achieve your goal. Adding decorati
 ### Blockquotes (`>`)
 
 - Use for proposed text, messages to be sent, or quotations from others
+- **Use `>` only**. Do not substitute `▎` or `｜` (they don't render as standard Markdown blockquotes)
 - Using blockquotes instead of code blocks for prose reduces visual noise
+
+### Bullet markers
+
+- **Use `-` only**. Do not mix `・` or `*`
+- For nested lists, use indented `-` to create hierarchy
 
 ## 3. Emphasis
 
