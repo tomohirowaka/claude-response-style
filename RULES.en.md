@@ -1,6 +1,6 @@
 # Response Style Rules
 
-Style rules for LLM/AI chat responses — reduce cognitive load and improve readability.
+Style rules for LLM/AI chat responses, email, documents, manuals, articles, and other prose — reduce cognitive load and improve readability.
 
 ## Core Principle: Minimum Necessary Structure
 
@@ -8,14 +8,67 @@ Choose the **minimum necessary structure** to achieve your goal. Adding decorati
 
 > Reserve markdown primarily for inline code, code blocks, and simple headings. — Anthropic
 
+Do not make text look human for its own sake. The goal is to help the reader understand the content accurately and move toward the necessary decision or action. Never alter facts, qualifications, or approved wording merely to improve style.
+
 ## 1. Sentence & Paragraph
 
 - **One sentence per claim**; keep sentences short
 - **Paragraphs should be 2–3 sentences or fewer** (NN/G)
 - **One topic per paragraph**, with the topic sentence at or near the beginning (Kinoshita, *Riika-kei no Sakubun Gijutsu*)
-- Prefer **active voice** over passive
+- Prefer **active voice** when the actor is known. Do not turn qualifications such as "is believed" or "may" into unsupported certainty
 
-## 2. Visual Structure
+## 2. Specificity, Rhythm & Voice
+
+### Put facts before style
+
+- Preserve facts, figures, names, conditions, and uncertainty from the input
+- Do not invent experience, emotion, numbers, or causation to make prose feel natural
+- If the source lacks the detail needed to support a claim, cut the vague praise or label it as unverified
+- Do not add deliberate variation to medical, legal, technical, or approved fixed text when accuracy and consistency take priority
+
+### Replace abstraction with evidence
+
+Words such as "careful," "reassuring," "high-quality," "contribution," "value," and "growth" do not help the reader judge the claim by themselves. When they matter, explain them through an action, audience, outcome, number, or source.
+
+Examples:
+
+- "We respond carefully" → state the response time, verification method, or scope
+- "A high-quality article" → state the sources, review process, or information the reader will gain
+- "We contribute to the community" → state who receives what and what change is intended
+
+If an adjective or conclusion cannot be made concrete, cut it instead of replacing it with another abstraction. A paragraph that adds no new information should be removed or merged with a neighboring paragraph.
+
+### Let meaning control rhythm
+
+- Use a short sentence for a conclusion or turn; use the length needed to explain a condition or reason
+- Do not repeat the same sentence length, syntax, or paragraph size mechanically
+- Do not mix short and long sentences to a fixed ratio or insert errors and hesitations as a performance of humanity
+- When transitions or endings repeat, rebuild the relationships between sentences instead of cycling synonyms
+- Read the result aloud and fix monotony, breathless passages, and breaks in meaning
+
+Sentence and paragraph length targets are readability guidelines, not uniformity targets. Prefer the role of each sentence over the visual waveform of the whole piece.
+
+### Use voice samples carefully
+
+When writing samples from a person or organization are available, study their vocabulary, cadence, and information order. Do not copy distinctive phrases superficially; adapt the underlying choices to the current reader and purpose.
+
+### Audit formulaic AI patterns
+
+When several of these patterns appear together, revise at the paragraph level rather than swapping isolated words:
+
+- praise, restating the question, or extended throat-clearing before the substance
+- transitions that do not explain the relationship between ideas
+- unsupported significance claims such as "a pivotal step" or "new possibilities"
+- vague attribution such as "experts say" or "many people"
+- cycling synonyms for the same subject
+- uniformly sized paragraphs, excessive headings, or bullet-heavy avoidance of prose
+- generic conclusions that do not follow from the body
+
+These are not banned phrases in isolation. Keep them when they have a clear role and evidence. The standard is less empty or difficult prose, not evasion of AI detectors.
+
+After rewriting, audit the result again for abstractions that were merely rephrased, formulaic language that survived, and certainty introduced by the edit.
+
+## 3. Visual Structure
 
 ### Tables
 
@@ -46,13 +99,13 @@ Choose the **minimum necessary structure** to achieve your goal. Adding decorati
 - **Use `-` only**. Do not mix `・` or `*`
 - For nested lists, use indented `-` to create hierarchy
 
-## 3. Emphasis
+## 4. Emphasis
 
 - **Bold**: **up to 3 instances per message** (a ceiling, not a target). Use bold when emphasis matters. Zero use makes it harder for the reader to locate the core point. Rule of thumb: bold a word if the reader will likely scan back to find it
 - **Emoji**: do not over-use. What feels like visual cueing becomes color overload. Anthropic explicitly documents "fewer emoji" for Claude Opus 4.7
 - **Leading priority markers (🔴🟡✅)**: avoid them when there are only 2–3 items — prose can convey priority just as well
 
-## 4. Response Flow
+## 5. Response Flow
 
 ### Truncated Pyramid
 
@@ -74,7 +127,7 @@ Phrases like the following carry no information. Cut them.
 - "I see, understood."
 - "Thank you for your question."
 
-## 5. What to Cut
+## 6. What to Cut
 
 When in doubt about cutting, keep things in this priority:
 
@@ -89,7 +142,7 @@ Things you can drop:
 - Mentions of things that are out of scope ("this part is fine" need not be said every time)
 - Excessive procedural decomposition (if "should I fix it?" works, don't split into "① identify file ② edit ③ PR")
 
-## 6. Code Examples
+## 7. Code Examples
 
 - **Code blocks are for code, commands, and syntax only**. Use blockquotes (`>`) for chat messages, proposed text, or quoted speech
 - **Always include a language tag** (`` ```python ``, `` ```bash ``, `` ```json ``). It enables syntax highlighting and lets the reader/AI grasp the context immediately
@@ -97,7 +150,7 @@ Things you can drop:
 - **Make omissions explicit** (`...` or `// ...` so the reader knows what was elided)
 - **If code is not runnable, label it as pseudocode**. Don't mix pseudocode with working code
 
-## 7. Japanese-Specific Rules
+## 8. Japanese-Specific Rules
 
 ### Sentence Rules (based on Plain Japanese guidelines)
 
@@ -108,7 +161,7 @@ Things you can drop:
 
 - **Vague expressions**: くらい / ごろ / など / といったところ
 - **Double negatives**: 〜ないとは言えない
-- **Overuse of passive voice**: 〜される / 〜と考えられる
+- **Overuse of passive voice**: make the actor explicit when possible, but retain phrases such as 〜と考えられる when they communicate evidence and uncertainty
 - **Ambiguous words**: 結構です / いいです (can mean either yes or no)
 - **Roundabout phrasing**:
   - することができる → できる
@@ -139,5 +192,9 @@ Things you can drop:
 - Kinoshita Korezumi, *Riika-kei no Sakubun Gijutsu* (Chuko Shinsho, 1981)
 - [Immigration Services Agency of Japan: Guidelines for Plain Japanese](https://www.moj.go.jp/isa/support/portal/plainjapanese_guideline.html)
 - Cowan (2001) 4±1 / Miller (1956) 7±2 — classic working memory limits
+- [conorbronsdon/avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) — structured audits and second-pass review of formulaic AI patterns (MIT)
+- [blader/humanizer](https://github.com/blader/humanizer) — rhythm and vocabulary calibration from writing samples (MIT)
+- [aaaronmiller/humanize-writing](https://github.com/aaaronmiller/humanize-writing) — sentence length, paragraph structure, and read-aloud rhythm checks (MIT)
+- [Shun Hashimoto, "How to create a winning self-promotion statement with AI"](https://x.com/Lifelighter1/status/2036356742041178348) — practitioner observations on uniform rhythm, abstraction, and generic prose
 
 See [docs/research/](./docs/research/) for source materials.
