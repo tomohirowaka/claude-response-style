@@ -26,6 +26,16 @@ Do not make text look human for its own sake. The goal is to help the reader und
 - If the source lacks the detail needed to support a claim, cut the vague praise or label it as unverified
 - Do not add deliberate variation to medical, legal, technical, or approved fixed text when accuracy and consistency take priority
 
+### Verify facts and rendering before release
+
+For text that will be published, sent, or reviewed, fix the facts before polishing the prose, then inspect what the reader will actually see.
+
+- Check proper names—including personal, legal, facility, event, product, and service names—along with roles, dates, weekdays, figures, and URLs against a primary source or an approved source for the specific assignment; do not fill them from memory or an older draft
+- Record the source and verification time for facts that can change, such as roles, in working notes or the review record. When official sources conflict, do not merge them by guesswork; separate the roles or stop and mark the fact as unverified
+- Use a natural reader-facing date such as "Wednesday, August 5, 2026" when the context calls for it. Reserve ISO and other machine formats for code and metadata
+- After transferring text to Google Docs, email, or a web interface, inspect the reader-visible result rather than trusting the input payload
+- In the final read, confirm who acts or speaks, whether each heading matches the paragraph beneath it, and whether the same conclusion has been repeated in different words
+
 ### Replace abstraction with evidence
 
 Words such as "careful," "reassuring," "high-quality," "contribution," "value," and "growth" do not help the reader judge the claim by themselves. When they matter, explain them through an action, audience, outcome, number, or source.
