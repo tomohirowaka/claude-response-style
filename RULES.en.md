@@ -100,7 +100,7 @@ After rewriting, audit the result again for abstractions that were merely rephra
 
 ### Blockquotes (`>`)
 
-- Use for proposed text, messages to be sent, or quotations from others (a draft the reader will copy and paste to send themselves goes in a code block, per §7)
+- Use for proposed text, messages to be sent, or quotations from others (a draft the reader will copy, paste, and send on their own goes in a code block, per §7)
 - **Use `>` only**. Do not substitute `▎` or `｜` (they don't render as standard Markdown blockquotes)
 - Using blockquotes instead of code blocks for prose reduces visual noise
 
@@ -154,7 +154,7 @@ Things you can drop:
 
 ## 7. Code Examples
 
-- **Code blocks are for code, commands, and syntax only**. Use blockquotes (`>`) for chat messages, proposed text, or quoted speech. Exception: a draft the reader will copy and paste to send themselves goes in a code block (`` ```text ``)
+- **Code blocks are for code, commands, and syntax only**. Use blockquotes (`>`) for chat messages, proposed text, or quoted speech. Exception: a draft the reader will copy, paste, and send on their own goes in a code block (`` ```text ``). A message the AI will send itself, shown for approval, stays in a blockquote
 - **Always include a language tag** (`` ```python ``, `` ```bash ``, `` ```json ``). It enables syntax highlighting and lets the reader/AI grasp the context immediately
 - **Inline code (`backtick`)** for file names, function names, variables, and short identifiers
 - **Make omissions explicit** (`...` or `// ...` so the reader knows what was elided)
